@@ -48,7 +48,7 @@ const uploadHandler = () => {
     class="backdrop fixed bottom-0 top-0 h-screen w-full bg-slate-800 opacity-50 z-[900]"
   ></div>
   <div
-    class="bg-gray-700 shadow-lg w-[500px] min-h-[200px] rounded-lg fixed mx-auto mt-4 top-[0] left-[30%] z-[1000]"
+    class="bg-gray-700 shadow-lg w-[500px] min-h-[200px] rounded-lg fixed mx-auto mt-4 top-[0] left-[35%] z-[1000]"
   >
     <form class="w-full p-4" @submit.prevent="addNewContact">
       <div class="mb-4 flex text-center justify-center items-center">
