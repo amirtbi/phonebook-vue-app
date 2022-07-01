@@ -17,7 +17,7 @@ const buttonClass = computed(() => {
       "text-gray-400",
       "border-[1px]",
       "border-solid",
-      "border-gray-500",
+      "border-gray-600",
     ];
   }
 });
