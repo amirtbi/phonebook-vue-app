@@ -17,7 +17,7 @@ const closeModal = () => {
 const addNewContact = () => {
   if (name.value !== "" && phone.value !== "") {
     const enteredData = {
-      id: 1,
+      id: new Date().toISOString(),
       name: name.value,
       phone: phone.value,
       imageUrl: preview.value,
@@ -37,7 +37,7 @@ const uploadHandler = () => {
   });
   fileName.value = file.value.files[0].name.split(".jpg")[0];
   photoUrl.value = file.value.files[0];
-  console.log(photoUrl.value);
+  console.log(file.value);
   preview.value = URL.createObjectURL(photoUrl.value);
 };
 </script>
