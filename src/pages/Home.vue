@@ -59,6 +59,7 @@ const backToContactPage = () => {
 };
 const switchFavorite = () => {
   const id = store.getters.selectedContact.id;
+  console.log("Selected id", id);
   store.commit("switchFavorite", id);
   addedFavorite.value = !addedFavorite.value;
 };
@@ -135,7 +136,7 @@ const closeModal = () => {
           /></span>
           <span class="ml-[-10px]" @click="switchFavorite"
             ><StarIcon
-              class="hover:text-yellow-300 h-[2rem] w-[2rem] cursor-pointer text-gray-500"
+              class="hover:text-yellow-300 h-[2rem] w-[2rem] cursor-pointer"
               :class="favoriteContact"
           /></span>
         </div>

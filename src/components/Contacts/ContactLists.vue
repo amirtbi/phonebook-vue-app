@@ -21,6 +21,7 @@ const contacts = computed(() => {
   }
 });
 const chooseContact = (contact) => {
+  console.log("selected contact info", contact);
   store.commit("setSelectedContact", contact);
   emits("emitHandler", true);
 };

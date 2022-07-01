@@ -17,7 +17,7 @@ const closeModal = () => {
 const addNewContact = () => {
   if (name.value !== "" && phone.value !== "") {
     const enteredData = {
-      id: new Date().toISOString(),
+      id: 1,
       name: name.value,
       phone: phone.value,
       imageUrl: preview.value,
